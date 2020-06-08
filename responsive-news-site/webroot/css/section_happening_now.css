@@ -1,3 +1,7 @@
+:root {
+  --gird-gap: 10px;
+}
+
 #section_happening_now {
   margin-block-start: -2.5rem;
 }
@@ -13,4 +17,20 @@
   height: 0;
   border-block-start: 2px solid #EBEDED;
   padding-block-start: 2.5rem;
+}
+
+
+/* Tablet */
+
+@media(min-width: 768px) {
+  #section_happening_now {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--gird-gap);
+    column-gap: var(--gird-gap);
+  }
+
+  .article_card:nth-child(1) {
+    grid-area: card1;
+  }
 }
