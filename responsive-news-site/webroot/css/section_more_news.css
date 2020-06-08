@@ -1,3 +1,7 @@
+:root {
+  --grid_gap: 10px;
+}
+
 #section_more_news {
   background-color: #fff;
 }
@@ -24,4 +28,29 @@
 
 #section_more_news .category a {
   color: #FA6980;
+}
+
+/* Tablet */
+
+@media(min-width: 768px) {
+  #section_more_news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--grid_gap);
+    grid-template-areas:
+      "header header"
+      "article1 article2";
+  }
+
+  section > header {
+    grid-area: header;
+  }
+
+  .article_longform:nth-child(1) {
+    grid-area: article1;
+  }
+
+  .article_longform:nth-child(2) {
+    grid-area: article2;
+  }
 }
