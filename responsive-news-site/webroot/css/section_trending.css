@@ -1,3 +1,23 @@
+:root {
+  --column-gap: 2rem;
+}
+
 #section_trending article {
   background-color: #fff;
+}
+
+/* Tablet */
+
+@media(min-width: 768px) {
+  #section_trending {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--column-gap);
+    column-gap: var(--column-gap);
+  }
+
+  #section_trending > header {
+    grid-column: span 2;
+    grid-row-start: 1;
+  }
 }
