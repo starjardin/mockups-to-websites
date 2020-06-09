@@ -41,7 +41,7 @@
 /* Tablet */
 
 @media(min-width: 768px) {
-  .article_simple:nth-last-child(1) {
+  .article_simple:nth-last-child(2) ~ article {
     display: none;
   }
 }
