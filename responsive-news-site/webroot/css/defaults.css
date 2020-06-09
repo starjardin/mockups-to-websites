@@ -10,9 +10,9 @@ body {
   color: #202124;
 }
 
-/* img {
+img {
   max-width: 100%;
-} */
+}
 
 abbr {
   text-decoration: none;
@@ -45,4 +45,14 @@ nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  html {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
 }
