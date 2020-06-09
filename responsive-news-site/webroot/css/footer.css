@@ -58,3 +58,35 @@ body > footer a {
   justify-content: space-between;
   max-width: 8.5rem;
 }
+
+/* Tablet */
+
+@media(min-width: 768px) {
+  .logo_link,
+  .web_link,
+  .links_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .links_site {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .link_primary {
+    display: block;
+  }
+  .web_link {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  .links_social {
+    width: 8.5rem;
+  }
+}
