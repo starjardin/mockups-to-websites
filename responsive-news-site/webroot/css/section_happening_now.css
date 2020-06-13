@@ -55,3 +55,45 @@
     grid-row: 4;
   }
 }
+
+/* Desktop */
+@media(min-width: 900px) {
+  #section_happening_now {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: var(--gird-gap);
+    column-gap: var(--gird-gap);
+    grid-template-areas:
+    "header header header"
+    "article_card1 article_card1 article_card3"
+    "article_card1 article_card1 article_card3"
+    "article_card1 article_card1 article_card4"
+    "article_card2 article_card2 article_card4"
+    "article_card2 article_card2 article_card5"
+    "article_card2 article_card2 article_card5";
+  }
+
+  #section_happening_now > header {
+    grid-area: header;
+  }
+
+  #section_happening_now > article:nth-of-type(1) {
+    grid-area: article_card1;
+  }
+
+  #section_happening_now > article:nth-of-type(2) {
+    grid-area: article_card2;
+  }
+
+  #section_happening_now > article:nth-of-type(3) {
+    grid-area: article_card3;
+  }
+
+  #section_happening_now > article:nth-of-type(4) {
+    grid-area: article_card4;
+  }
+
+  #section_happening_now > article:nth-of-type(5) {
+    grid-area: article_card5;
+  }
+}
