@@ -93,7 +93,7 @@ body > footer a {
 
 /* Desktop */
 
-@media(min-width: 900px) {
+@media(min-width: 1440px) {
   body > footer {
     display: flex;
     flex-direction: row;
