@@ -21,3 +21,20 @@
     grid-row-start: 1;
   }
 }
+
+
+/* Desktop */
+
+@media(min-width: 900px) {
+  #section_trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  #section_trending > header {
+    grid-column: span 3;
+    grid-row-start: 1;
+  }
+}
