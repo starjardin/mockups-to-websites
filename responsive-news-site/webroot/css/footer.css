@@ -90,3 +90,35 @@ body > footer a {
     width: 8.5rem;
   }
 }
+
+/* Desktop */
+
+@media(min-width: 900px) {
+  body > footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .web_link {
+    align-items: center;
+  }
+
+  .links_site {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .form_subscribe {
+    margin-top: 0;
+  }
+
+  .links_social {
+    padding-inline-start: 4rem;
+  }
+
+  footer h2 > a {
+    padding-inline-end: 4rem;
+  }
+}
