@@ -48,7 +48,7 @@
 
 /* Desktop */
 
-@media(min-width: 900px) {
+@media(min-width: 1440px) {
   .article_simple:nth-last-child(2) ~ article {
     display: grid;
   }
