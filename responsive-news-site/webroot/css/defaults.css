@@ -58,5 +58,32 @@ nav > ul {
 }
 
 /* Ddesktop mode */
-@media(min-width: 900px) {
+@media(min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "featured featured more_news"
+    "trending trending trending"
+    "happening_now happening_now happening_now";
+  }
+
+  #section_featured {
+    grid-area: featured;
+  }
+
+  #section_more_news {
+    grid-area: more_news;
+  }
+
+  #section_trending {
+    grid-area: trending;
+  }
+
+  #section_happening_now {
+    grid-area: happening_now;
+  }
+
+
 }
+
