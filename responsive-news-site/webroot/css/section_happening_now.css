@@ -98,20 +98,31 @@
   }
 
   #section_happening_now .article_card {
-    height: calc((100vw -3rem) / 2);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: calc((100vw -3rem) / 3);
   }
 
   #article_simple1 {
     margin-block-start: 0;
-    height: calc((100vw - 3rem) / 3);
+    height: calc((100vw - 3rem) / 5);
   }
 
   #article_simple2 {
-    height: calc((100vw - 3rem) / 3);
+    height: calc((100vw - 3rem) / 5);
   }
 
   #article_simple3 {
     display: flex;
-    height: calc((100vw - 3rem) / 3);
+    height: calc((100vw - 3rem) / 5);
+  }
+
+  #section_happening_now .article_card .category {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
   }
 }
+
