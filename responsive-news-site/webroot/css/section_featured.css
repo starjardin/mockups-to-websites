@@ -22,3 +22,13 @@
 #section_featured footer {
   display: none;
 }
+
+
+/* Desktop */
+
+@media(min-width: 1440px) {
+  #section_featured {
+    display: flex;
+    flex-direction: column;
+  }
+}
