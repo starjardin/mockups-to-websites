@@ -58,9 +58,8 @@ body > header > p > a > span {
 @media(min-width: 1440px) {
   #section_featured > .article_card {
     height: 100%;
-  }
-
-  #section_featured > .article_card {
-
+    padding-inline-start: 14rem;
+    padding-block-start: 14rem;
   }
 }
+
