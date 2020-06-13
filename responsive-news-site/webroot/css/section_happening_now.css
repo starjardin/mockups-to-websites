@@ -57,7 +57,7 @@
 }
 
 /* Desktop */
-@media(min-width: 900px) {
+@media(min-width: 1440px) {
   #section_happening_now {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,5 +95,23 @@
 
   #section_happening_now > article:nth-of-type(5) {
     grid-area: article_card5;
+  }
+
+  #section_happening_now .article_card {
+    height: calc((100vw -3rem) / 2);
+  }
+
+  #article_simple1 {
+    margin-block-start: 0;
+    height: calc((100vw - 3rem) / 3);
+  }
+
+  #article_simple2 {
+    height: calc((100vw - 3rem) / 3);
+  }
+
+  #article_simple3 {
+    display: flex;
+    height: calc((100vw - 3rem) / 3);
   }
 }
