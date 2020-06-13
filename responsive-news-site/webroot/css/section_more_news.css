@@ -54,3 +54,11 @@
     grid-area: article2;
   }
 }
+
+
+/* Desktop */
+@media(min-width: 900px) {
+  #section_more_news {
+    display: block;
+  }
+}
