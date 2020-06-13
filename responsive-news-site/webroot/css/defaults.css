@@ -56,3 +56,7 @@ nav > ul {
     margin-inline-end: auto;
   }
 }
+
+/* Ddesktop mode */
+@media(min-width: 900px) {
+}
