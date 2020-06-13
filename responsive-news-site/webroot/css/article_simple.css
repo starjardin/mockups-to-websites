@@ -45,3 +45,11 @@
     display: none;
   }
 }
+
+/* Desktop */
+
+@media(min-width: 900px) {
+  .article_simple:nth-last-child(2) ~ article {
+    display: grid;
+  }
+}
