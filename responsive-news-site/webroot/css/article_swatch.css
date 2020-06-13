@@ -62,10 +62,16 @@
   .article_swatch:nth-of-type(2) ~ article  {
     display: none;
   }
+  .article_swatch {
+    height: calc((100vw - 2rem) / 2);
+  }
 }
 /* Desktop */
 @media(min-width: 1440px) {
   .article_swatch:nth-of-type(2) ~ article  {
     display: flex;
+  }
+  .article_swatch {
+    height: calc((100vw - 3rem) / 3);
   }
 }

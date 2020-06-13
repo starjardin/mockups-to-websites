@@ -44,6 +44,10 @@
   .article_simple:nth-last-child(2) ~ article {
     display: none;
   }
+
+  .article_simple {
+    height: calc((100vw - 2rem) / 2);
+  }
 }
 
 /* Desktop */
