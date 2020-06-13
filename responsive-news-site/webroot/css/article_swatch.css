@@ -63,3 +63,9 @@
     display: none;
   }
 }
+/* Desktop */
+@media(min-width: 900px) {
+  .article_swatch:nth-of-type(2) ~ article  {
+    display: grid;
+  }
+}
